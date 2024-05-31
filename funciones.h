@@ -1,0 +1,10 @@
+char nombres[maxproductos][longitunombre];
+int cantidades[maxproductos];
+float precioUnidad[maxproductos];
+float preciototal[maxproductos];
+int cantidadproduc;
+void calcularpreciototal(int a);
+void anadir();
+void editar();
+void eliminar();
+void lista();
