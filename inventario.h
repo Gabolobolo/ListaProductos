@@ -71,7 +71,7 @@ void editar() {
           }
 
           printf("Ingrese el nuevo precio unitario: ");
-          if (scanf("%f", &precioUnidad[i]) <=0 1) {
+          if (scanf("%f", &precioUnidad[i]) <=0 ) {
               printf("Precio inválido.\n");
               return;
           }
