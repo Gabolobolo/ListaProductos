@@ -1,5 +1,5 @@
 //Funciones y variables definidas en inventario.h//
-#include "inventario.h"
+#include "funciones.c"
 
 //Se declaran las variables globales para almacenar los nombres de los productos//
 char nombres[maxproductos][longitunombre];
