@@ -60,7 +60,7 @@ void anadir() {
 void editar() {
   char nombre[longitunombre];
   printf("Ingrese el nombre del producto a editar: ");
-  scanf(" %26[^\n]", nombre);
+  scanf(" %25[^\n]", nombre);
 
   for (int i = 0; i < cantidadproduc; i++) {
       if (strcmp(nombres[i], nombre) == 0) {
@@ -88,7 +88,7 @@ void editar() {
 void eliminar() {
   char nombre[longitunombre];
   printf("Ingrese el nombre del producto a eliminar: ");
-  scanf(" %24[^\n]", nombre); 
+  scanf(" %25[^\n]", nombre); 
 
   for (int i = 0; i < cantidadproduc; i++) {
       if (strcmp(nombres[i], nombre) == 0) {
@@ -114,10 +114,10 @@ void lista() {
   }
 
   printf("Lista de productos:\n\n");
-  printf("| %-20s | %-10s | %-15s | %-15s |\n", "Nombre", "Cantidad", "Precio Unitario", "Precio Total");
+  printf("| %-25s | %-10s | %-15s | %-15s |\n", "Nombre", "Cantidad", "Precio Unitario", "Precio Total");
   printf("|----------------------|------------|------------------|------------------|\n");
   for (int i = 0; i < cantidadproduc; i++) {
-      printf("| %-20s | %-10d | $%-15.2f | $%-15.2f |\n",
+      printf("| %-25s | %-10d | $%-15.2f | $%-15.2f |\n",
              nombres[i], cantidades[i], precioUnidad[i], preciototal[i]);
   }
 }
