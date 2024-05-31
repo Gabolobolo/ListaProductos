@@ -46,7 +46,7 @@ void anadir() {
   }
 
   printf("Ingrese el precio unitario: ");
-  if (scanf("%f", &precioUnidad[cantidadproduc]) < 1) {
+  if (scanf("%f", &precioUnidad[cantidadproduc]) < 0) {
       printf("Precio inválido.\n");
       return;
   }
