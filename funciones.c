@@ -3,6 +3,7 @@
 //Bibliotecas//
 #include <stdio.h>
 #include <string.h>
+#include "funciones.h"
 
 //Definicion de las constantes (maximo numero de productos, longitud maxima del nombre del producto)//
 #define maxproductos 10
