@@ -65,13 +65,13 @@ void editar() {
   for (int i = 0; i < cantidadproduc; i++) {
       if (strcmp(nombres[i], nombre) == 0) {
           printf("Ingrese la nueva cantidad: ");
-          if (scanf("%d", &cantidades[i]) != 1) {
+          if (scanf("%d", &cantidades[i]) <= 0) {
               printf("Cantidad inválida.\n");
               return;
           }
 
           printf("Ingrese el nuevo precio unitario: ");
-          if (scanf("%f", &precioUnidad[i]) != 1) {
+          if (scanf("%f", &precioUnidad[i]) <=0 1) {
               printf("Precio inválido.\n");
               return;
           }
